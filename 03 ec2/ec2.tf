@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "this" {
   ami                     = "ami-0e3aeafe193bbdd4a"
-  instance_type           = "t3.micro"
+  instance_type           = "t2.micro"
    tags = {
     Name = "Terraform Server"
   }
