@@ -38,5 +38,5 @@ variable "ex-map" {
 }
 
 output "ex-map" {
-  value = "Welcome to Devops with ${var.ex-map["Cloud"]}" training and the training duration is ${var.ex-map["Duration"]} and trainer name is ${var.ex-map["Trainer"]}
+  value = "Welcome to Devops with ${var.ex-map["Cloud"]} training and the training duration is ${var.ex-map["Duration"]} and trainer name is ${var.ex-map["Trainer"]} "
 }
