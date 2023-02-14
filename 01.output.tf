@@ -25,5 +25,5 @@ variable "example-list" {
 }
 
 output "ex-list-op" {
-  value = "Welcome to ${var.example-list[0]} and ${var.example-list[1]} training. Training duration is ${var.example-list[2]} hours and you can also apply for ${var.example-list[3]} jobs"
+  value = "Welcome to ${var.example-list[0]} and ${var.example-list[1]} training. Training duration is ${var.example-list[3]} hours and you can also apply for ${var.example-list[4]} jobs"
 }
