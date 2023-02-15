@@ -7,3 +7,5 @@ terraform {
 }
 
 provider "aws" {}
+
+//this is for s3 bucket
