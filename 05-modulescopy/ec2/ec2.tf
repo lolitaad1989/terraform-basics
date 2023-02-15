@@ -11,6 +11,6 @@ resource "aws_instance" "my-ec2" {
   }
 
 
-output "public_dins_output" {
-  value = aws_instance.my-ec2.public_dns
-}
+# output "public_dins_output" {
+#   value = aws_instance.my-ec2.public_dns
+# }
