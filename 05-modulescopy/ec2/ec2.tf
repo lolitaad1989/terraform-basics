@@ -5,7 +5,7 @@ resource "aws_instance" "my-ec2" {
   vpc_security_group_ids  = [var.sg]
 
   provisioner "remote-exec" {
-        connection {
+    connection {
       type     = "ssh"
       user     = "centos"
       password = "DevOps321"
