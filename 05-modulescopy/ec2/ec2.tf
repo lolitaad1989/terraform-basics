@@ -15,7 +15,7 @@ resource "aws_instance" "my-ec2" {
     password = "DevOps321"
     host     = self.public_ip
   }
-
+//ok
     inline = [
         "ansible-pull -U https://github.com/lolitaad1989/ansible.git -e COMPONENT=mongodb -e ENV=dev robot-pull.yml"
     ]
