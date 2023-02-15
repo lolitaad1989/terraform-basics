@@ -3,15 +3,14 @@ resource "aws_instance" "my-ec2" {
   ami                     = "ami-0c1d144c8fdd8d690"
   instance_type           = "t2.micro"
   vpc_security_group_ids  = [var.sg]
-    connection {
+
+  provisioner "remote-exec" {
+        connection {
       type     = "ssh"
       user     = "centos"
       password = "DevOps321"
       host     = self.public_ip         # self. will only work if it's inside the resource ; If not, we need to use aws_instance.my-ec2.public_ip
       }
-  provisioner "remote-exec" {
-
-
       inline = [
           "ansible-pull -U https://github.com/b52-clouddevops/ansible.git -e COMPONENT=mongodb -e ENV=dev robot-pull.yml"
         ]
