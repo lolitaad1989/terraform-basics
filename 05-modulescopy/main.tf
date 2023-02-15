@@ -7,6 +7,6 @@ module "sg" {
   source = "./sg"
 }
 
-output "server_public_ip" {
-  value = module.ec2.public_dins_output
-}
+# output "server_public_ip" {
+#   value = module.ec2.public_dins_output
+# }
