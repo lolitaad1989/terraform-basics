@@ -7,7 +7,7 @@ resource "aws_spot_instance_request" "my_spot_server" {
   wait_for_fulfillment  = true               # terraform job will only be completed if the reques is fulfilled. If not, tf wails for 10 mins and timesout.
 
   tags = {
-    Name = var.COMPONENT
+    Name = "${var.COMPONENT}"
   }
 
   provisioner "remote-exec" {
