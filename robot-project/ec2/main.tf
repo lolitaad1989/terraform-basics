@@ -1,6 +1,6 @@
 
 resource "aws_spot_instance_request" "my_spot_server" {
-  ami                     = data.aws_ami.lab-image.image_id
+  ami                     = "ami-0e3aeafe193bbdd4a"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = [aws_security_group.allows_all.id]
 
