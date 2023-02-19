@@ -1,5 +1,5 @@
 resource "aws_route53_record" "component" {
-  zone_id = "Z08832833UMKBNNRO3YG"
+  zone_id = "Z06030532K1GGJCYRHUC8"
   name    = "${var.COMPONENT}-dev.roboshop.internal"
   type    = "A"
   ttl     = 10

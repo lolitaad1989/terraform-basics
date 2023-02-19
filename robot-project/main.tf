@@ -1,14 +1,14 @@
- module "mongodb" {
-    source      = "./ec2"
-    COMPONENT   = "mongodb"
-    APP_VERSION = "null"
-}
+#  module "mongodb" {
+#     source      = "./ec2"
+#     COMPONENT   = "mongodb"
+#     APP_VERSION = "null"
+# }
 
-module "catalogue" {
-    source      = "./ec2"
-    COMPONENT   = "catalogue"
-    APP_VERSION = "0.0.3"
-}
+# module "catalogue" {
+#     source      = "./ec2"
+#     COMPONENT   = "catalogue"
+#     APP_VERSION = "0.0.3"
+# }
 
 # module "redis" {
 #     source      = "./ec2"
@@ -52,8 +52,8 @@ module "catalogue" {
 #     APP_VERSION = "0.0.3"
 # }
 
-# module "frontend" {
-#     source      = "./ec2"
-#     COMPONENT   = "frontend"
-#     APP_VERSION = "0.0.1"
-# }
+module "frontend" {
+    source      = "./ec2"
+    COMPONENT   = "frontend"
+    APP_VERSION = "0.0.1"
+}
