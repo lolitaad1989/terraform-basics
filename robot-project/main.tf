@@ -4,11 +4,11 @@
     APP_VERSION = "null"
 }
 
-# module "catalogue" {
-#     source      = "./ec2"
-#     COMPONENT   = "catalogue"
-#     APP_VERSION = "0.0.3"
-# }
+module "catalogue" {
+    source      = "./ec2"
+    COMPONENT   = "catalogue"
+    APP_VERSION = "0.0.3"
+}
 
 # module "redis" {
 #     source      = "./ec2"
