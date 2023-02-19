@@ -1,4 +1,6 @@
+# Declaring the datasource
 data "aws_ami" "lab-image" {
-  ami = "ami-0e3aeafe193bbdd4a"
-  instance_type = "t2.micro"
+  most_recent      = true
+  name_regex       = "b52-ansible-dev-20Jan2023"
+#   owners           = ["self"]
 }
