@@ -3,12 +3,13 @@ resource "aws_spot_instance_request" "my_spot_server" {
   ami                     = "ami-0e3aeafe193bbdd4a"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = [aws_security_group.allows_all.id]
+  tags = {
+    Name = var.COMPONENT
+  }
 
   wait_for_fulfillment  = true               # terraform job will only be completed if the reques is fulfilled. If not, tf wails for 10 mins and timesout.
 
-  tags = {
-    Name = "${var.COMPONENT}"
-  }
+ 
 
   provisioner "remote-exec" {
     connection {
